@@ -1,0 +1,564 @@
+/* This stylesheet handles the bulk of visual style of the application and is written in rough order from top-left to bottom-right,
+focusing first on our added sidebar and buttons, with the base map features exported by qgis2web left towards the end.
+ 48 - image overlay
+112 - storyteller buttons
+279 - storyteller photo, name
+306 - storyteller audio clip
+328 - storyteller picture set image carousel
+393 - storyteller biography
+409 - landmark buttons
+488 - map */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+
+img {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkgray; 
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: gray; 
+}
+
+th, td {
+    vertical-align: top;
+    text-align: left;
+}
+
+#image-overlay {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 100;
+    text-align: center;
+}
+
+#overlay-close {
+    height: 28px;
+    background: none;
+    border: none;
+    color: white;
+    margin: 5vh 0 0.5vh 50vw;
+}
+
+#image-expand {
+    height: 55%;
+    margin: 0 auto;
+}
+
+#image-expand>img {
+    height: 100%;
+}
+
+#caption-box {
+    -webkit-flex: 20;
+    -ms-flex: 20;
+    flex: 20;
+    width: 70%;
+    max-width: 750px;
+    margin: 3vh auto;
+    color: white;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#left-side {
+    display: inline-block;
+    vertical-align: top;
+    width: 34%;
+    height: 100%;
+    margin: 0 -4px 0 0;
+}
+
+#left-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+#storytellers {
+    position: relative;
+    margin: 0 0.6vh 0 0;
+}
+
+.storyteller-button {
+    position: relative;
+    margin: 0 0 0.5vh 0;
+    border: none;
+    width: 100%;
+    font-size: calc(8px + 0.5vh);
+}
+
+#storyteller1 {
+    background-color: #113237;
+    border-style: solid;
+    border-color: #113237;
+}
+
+#storyteller1.active {
+    background-color: white;
+    color: #113237;
+}
+
+#storyteller1.off {
+    background-color: white;
+    border-color: white;
+    color: gray;
+}
+
+#storyteller1:active {
+    color: gray;
+}
+
+#storyteller2 {
+    background-color: #825665;
+    border-style: solid;
+    border-color: #825665;
+}
+
+#storyteller2.active {
+    background-color: white;
+    color: #825665;
+}
+
+#storyteller2.off {
+    background-color: white;
+    border-color: white;
+    color: gray;
+}
+
+#storyteller2:active {
+    color: gray;
+}
+
+#storyteller3 {
+    background-color: #8c7259;
+    border-style: solid;
+    border-color: #8c7259;
+}
+
+#storyteller3.active {
+    background-color: white;
+    color: #8c7259;
+}
+
+#storyteller3.off {
+    background-color: white;
+    border-color: white;
+    color: gray;
+}
+
+#storyteller3:active {
+    color: gray;
+}
+
+#storyteller4 {
+    background-color: #659ea8;
+    border-style: solid;
+    border-color: #659ea8;
+}
+
+#storyteller4.active {
+    background-color: white;
+    color: #659ea8;
+}
+
+#storyteller4.off {
+    background-color: white;
+    border-color: white;
+    color: gray;
+}
+
+#storyteller4:active {
+    color: gray;
+}
+
+#storyteller5 {
+    background-color: #40575b;
+    border-style: solid;
+    border-color: #40575b;
+}
+
+#storyteller5.active {
+    background-color: white;
+    color: #40575b;
+}
+
+#storyteller5.off {
+    background-color: white;
+    border-color: white;
+    color: gray;
+}
+
+#storyteller5:active {
+    color: gray;
+}
+
+#storyteller6 {
+    background-color: #c7ba7e;
+    border-style: solid;
+    border-color: #c7ba7e;
+}
+
+#storyteller6.active {
+    background-color: white;
+    color: #c7ba7e;
+}
+
+#storyteller6.off {
+    background-color: white;
+    border-color: white;
+    color: gray;
+}
+
+#storyteller6:active {
+    color: gray;
+}
+
+#storyteller7 {
+    background-color: #5d523f;
+    border-style: solid;
+    border-color: #5d523f;
+}
+
+#storyteller7.active {
+    background-color: white;
+    color: #5d523f;
+}
+
+#storyteller7.off {
+    background-color: white;
+    border-color: white;
+    color: gray;
+}
+
+#storyteller7:active {
+    color: gray;
+}
+
+#content-box {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-box {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    vertical-align: top;
+    width: 97%;
+    text-align: center;
+    padding: 0;
+    margin: 0.5vh auto 0 auto;
+    overflow: hidden;
+}
+
+#profile-box img {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+#header-box {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5vh 0.5vw;
+}
+
+#audio-player {
+    display: none;
+    border: solid gray;
+    font-size: 1.5vh;
+    border-radius: 0.75vh;
+    margin: 0 auto;
+}
+
+#audio-player>i {
+    padding: 0.5vh;
+}
+
+.playing {
+    color: gray;
+    background-color: white;
+}
+
+.paused {
+    color: white;
+    background-color: gray;
+}
+
+#carousel-container {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: none;
+}
+
+#image-carousel {
+    display: grid;
+    width: 70%;
+    grid-template-areas: 'left middle right';
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0.5vh auto 0 auto;
+}
+
+#left-chevron {
+    grid-area: left;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 2vh;
+    height: 100%;
+    align-items: center;
+    padding: 0 1vw;
+    margin: 0 0.5vw 0 0;
+    color: gray;
+    border-radius: 0.75vh;
+}
+
+#left-chevron:hover {
+    background-color: lightgray;
+}
+
+#middle-image {
+    grid-area: middle;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#middle-image>img {
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100px + 20vh);
+}
+
+#right-chevron {
+    grid-area: right;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 2vh;
+    height: 100%;
+    align-items: center;
+    padding: 0 1vw;
+    margin: 0 0 0 0.5vw;
+    color: gray;
+    border-radius: 0.75vh;
+}
+
+#right-chevron:hover {
+    background-color: lightgray;
+}
+
+#text-box {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 3%;
+    margin: 1.5% 2% 0 0;
+}
+
+#right-side {
+    display: inline-block;
+    width: 65.75%;
+    height: 100%;
+}
+
+#layer-buttons {
+    height: 50px;
+    display: grid;
+    grid-template-areas:
+        'storytellers landmark1 landmark2 landmark3 landmark4 landmark5 historic';
+    width: 100%;
+}
+
+#layer-buttons>button {
+    font-size: calc(8px + 0.25vw);
+    
+}
+
+.landmark-button {
+    margin: 0 0.5vh 0 0;
+    background-color: #383d5c;
+    border: solid #383d5c;
+    vertical-align: top;
+}
+
+.landmark-button.active {
+    color: #383d5c;
+}
+
+#landmark1 {
+    grid-area: landmark1;
+}
+
+#landmark2 {
+    grid-area: landmark2;
+}
+
+#landmark3 {
+    grid-area: landmark3;
+}
+
+#landmark4 {
+    grid-area: landmark4;
+}
+
+#landmark5 {
+    grid-area: landmark5;
+}
+
+.wholelayer-button {
+    background-color: #2a2a2a;
+    border-style: solid;
+    border-color: #2a2a2a;
+}
+
+.wholelayer-button.active {
+    color: #2a2a2a;
+}
+
+#storyteller0 {
+    grid-area: storytellers;
+    margin: 0 0.5vh 0 0;
+}
+
+#historic0 {
+    grid-area: historic;
+}
+
+.layer-button {
+    color: white;
+}
+
+.layer-button.active {
+    background-color: white;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+.layer-button:active {
+    color: gray;
+}
+
+#map {
+    height: calc(100% - 50px);
+    display: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.ol-popup {
+    display: none;
+    position: absolute;
+    background-color: white;
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;   
+    height: auto;
+    width: auto;
+    width: 225px;
+    max-height: 400px;
+}
+
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.ol-popup-closer:after {
+    content: "X";
+}
+
+.ol-attribution a {
+    text-decoration: none;
+    color: #666;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+.layer-switcher .panel {
+    border: 4px solid rgba(0,60,136,.5) !important;
+    border-radius: 4px !important;
+}
+
+.layer-switcher {
+    top: 0.5em;
+    right: 0.5em;
+    text-align: left;
+}
+
+#popup-content {
+    max-height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#popup-content img {
+    max-width: 200px;
+}
+
+
+#popup-content>ul>li:nth-child(even) {
+    background-color: #eee;
+}
+
+#popup-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#popup-content li {
+    margin-bottom:0.25em;
+}
