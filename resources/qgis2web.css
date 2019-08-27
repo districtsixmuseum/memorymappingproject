@@ -274,12 +274,13 @@ button {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #profile-box {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     vertical-align: top;
     width: 97%;
     text-align: center;
@@ -291,7 +292,6 @@ button {
 #profile-box img {
     height: 100%;
     width: auto;
-    overflow: hidden;
 }
 
 #header-box {
@@ -391,9 +391,9 @@ button {
 }
 
 #text-box {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0 3%;
