@@ -10,10 +10,10 @@ var json_Landmarks_Community_12 = {
     "features": [{
             "type": "Feature",
             "properties": {
-                "Name": "Beinknstadt Bookshop",
-                "Address": "38 Cantebury Road",
+                "Name": "Beinkinstadt Bookshop",
+                "Address": "38 Canterbury Street",
                 "Year Built": "1903",
-                "Summary": "Situated on the outskirts of District Six, the Beinknstadt Bookshop was one of the last reminders of the Jewish community that used to live in the area. The business was established in 1903 by Moshe Beinkinstadt and served as a cultural refuge for Jewish immigrants to the city. It sold a variety of religious books and Judaica until it closed in 2008.",
+                "Summary": "Situated on the outskirts of District Six, the Beinkinstadt Bookshop was one of the last reminders of the Jewish community that used to live in the area. The business was established in 1903 by Moshe Beinkinstadt and served as a cultural refuge for Jewish immigrants to the city. It sold a variety of religious books and Judaica until it closed in 2008.",
                 "Photo": "landmarks/G1_beinkenstadt.jpg"
             },
             "geometry": {
@@ -27,8 +27,7 @@ var json_Landmarks_Community_12 = {
                 "Name": "Eoan Group",
                 "Address": "302 Hanover Street",
                 "Year Built": "1933",
-                "Summary": "The group was founded in 1933 as a cultural association that offered musical and artistic training for the District Six community. It hosted an amateur opera company, and many of its performers went on to perform at the New York Met. The strain of Apartheid took its toll on the group, and support gradually diminished. They relocated to a new theatre space in Athlone in 1969.",
-                "Photo": "landmarks/G2_eoan_group.jpg"
+                "Summary": "The group was founded in 1933 as a cultural association that offered musical and artistic training for the District Six community. It hosted an amateur opera company, and many of its performers went on to perform at the New York Met. The strain of Apartheid took its toll on the group, and support gradually diminished. They relocated to a new theatre space in Athlone in 1969."
             },
             "geometry": {
                 "type": "Point",
@@ -55,7 +54,7 @@ var json_Landmarks_Community_12 = {
                 "Name": "Silvertree Club",
                 "Address": "Rochester Street",
                 "Year Built": null,
-                "Summary": "Silvertree was established as a boys club and organised activities such as mountain climbing, rugby, boxing, and chess. The 1st Cape Town Pathfinder Troop were invested here in 1933, but interest in the club waned and by 1937 the club had ceased to exist. In 1951 activities started up again. Whit the Group Areas Act attendance at the Silvertree Club fell once again. Today the building still stands and is known as the Tafelberg Creche.",
+                "Summary": "Silvertree was established as a boys club and organised activities such as mountain climbing, rugby, boxing, and chess. The 1st Cape Town Pathfinder Troop were invested here in 1933, but interest in the club waned and by 1937 the club had ceased to exist. In 1951 activities started up again. With the Group Areas Act attendance at the Silvertree Club fell once again. Today the building still stands and is known as the Tafelberg Creche.",
                 "Photo": "landmarks/G5_silvertree_club.jpg"
             },
             "geometry": {

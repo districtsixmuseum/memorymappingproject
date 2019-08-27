@@ -11,7 +11,7 @@ var json_Landmarks_Schools_8 = {
             "type": "Feature",
             "properties": {
                 "Name": "Hewat Training College",
-                "Address": "Birchington Road",
+                "Address": "Roeland Street",
                 "Year Built": null,
                 "Summary": "Hewat College was established in 1941 as a teachers training college.",
                 "Photo": null
@@ -27,7 +27,7 @@ var json_Landmarks_Schools_8 = {
                 "Name": "Trafalgar High School",
                 "Address": "Constitution Street",
                 "Year Built": "1912",
-                "Summary": "Trafalgar High was established on Kuyper Street in 1912. It was the first school built in Cape Town to serve students of colour. In 1966, when District Six was declared a White Group Area, Trafalgar High School refused to be relocated. Even with the majority of the student body being forcibly removed over a kilometre away, the school achieved a high pass rate. As of 2019, the school is still operational within the District Six community.",
+                "Summary": "Trafalgar High was established on Kuyper Street in 1912. It was the first school built in Cape Town to serve students of colour. In 1966, when District Six was declared a White Group Area, Trafalgar High School refused to be relocated. Even with the majority of the student body being forcibly removed, the school achieved a high pass rate. As of 2019, the school is still operational within the District Six community.",
                 "Photo": "landmarks/S5_trafalgar_high.jpg"
             },
             "geometry": {
@@ -67,9 +67,9 @@ var json_Landmarks_Schools_8 = {
             "type": "Feature",
             "properties": {
                 "Name": "Trafalgar Primary School",
-                "Address": "DeVilliers Street",
+                "Address": "De Villiers Street",
                 "Year Built": null,
-                "Summary": "The old double story stone building in Tennant Street was Trafalgar Junior School. It was closed in the early 1980’s and is now owned by the Cape Peninsula University of Technology.",
+                "Summary": "The old double story stone building in De Villiers Street was Trafalgar Junior School. It was closed in the early 1980’s and is now owned by the Cape Peninsula University of Technology.",
                 "Photo": "landmarks/S6_trafalgar_primary.jpg"
             },
             "geometry": {
@@ -97,7 +97,7 @@ var json_Landmarks_Schools_8 = {
                 "Name": "Zonnebloem Training College",
                 "Address": "College Street",
                 "Year Built": "1858",
-                "Summary": "The Anglican Church and colonial government bought the wine farm Zonnebloem in 1858 to start a school aimed at Anglicising the sons (and some daughters) of Xhosa chiefs. Later, the estate housed the Teacher's Training College as well as Zonnebloem Boys and Girls Primary Schools. The administrative hub of the Anglican Church is still located here.",
+                "Summary": "The Anglican Church bought the wine farm Zonnebloem in 1858 to start a school aimed at Anglicising the sons (and some daughters) of Xhosa chiefs. Later, the estate housed the Teacher's Training College as well as Zonnebloem Boys and Girls Primary Schools. The administrative hub of the Anglican Church is still located here.",
                 "Photo": "landmarks/S7_zonnebloem_training_college.jpg"
             },
             "geometry": {

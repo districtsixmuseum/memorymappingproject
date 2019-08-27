@@ -66,7 +66,7 @@ var json_Landmarks_Churches_9 = {
         {
             "type": "Feature",
             "properties": {
-                "Name": "St. Marks Anglican Church",
+                "Name": "St. Mark's Anglican Church",
                 "Address": "Clifton Street",
                 "Year Built": "1887",
                 "Summary": "The St. Mark’s Church was constructed of Table Mountain sandstone, earning it the nickname “klipkerkie” (little stone church). The church stood against the Group Areas Act and refused to be moved during the dissolution of District Six. Longstanding members would return for Sunday services and the church became a symbol of the resilience found within District Six. It continues to serve the local community.",
